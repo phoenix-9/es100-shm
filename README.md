@@ -18,7 +18,7 @@ server 127.127.28.0
 
 Compiling the program:
 As of now, you may have to change the source code to customize the name of the I2C bus and gpio chip.  This works for me:
-gcc -Wall -o es100 -li2c -lgpiod -I/usr/include/glib-2.0 es100.c
+gcc -Wall -o es100-shm -li2c -lgpiod -I/usr/include/glib-2.0 es100-shm.c
 
 Running the program:
 Just run it.  It will need appropriate permissions to access the I2C bus and GPIO chip.  I run it as root.  Logging information goes to syslog.
